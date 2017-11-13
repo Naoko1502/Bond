@@ -1,0 +1,640 @@
+display:block-inline;font-size:10px;width:20px;
+
+
+
+
+if(i == 2){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg1").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname1").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%			
+					}else{
+	%>
+						document.getElementById("wsimg1").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname1").innerHTML = "temp_00";
+						//document.getElementById("wsimg1").style.visibility = "hidden";
+	<%				
+					}
+				}
+				if(i == 3){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg6").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname6").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%
+					}else{
+	%>
+						document.getElementById("wsimg6").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname6").innerHTML = "temp_00";
+						//document.getElementById("wsimg6").style.visibility = "hidden";
+	<%
+					}
+				}
+				if(i == 4){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg2").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname2").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%				
+					}else{
+	%>
+						document.getElementById("wsimg2").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname2").innerHTML = "temp_00";
+						//document.getElementById("wsimg2").style.visibility = "hidden";
+	<%
+					}
+				}
+				if(i == 5){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg10").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname10").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%
+					}else{
+	%>
+						document.getElementById("wsimg10").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname10").innerHTML = "temp_00";
+						//document.getElementById("wsimg10").style.visibility = "hidden";
+	<%
+					}
+				}
+				if(i == 6){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg3").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname3").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%
+					}else{
+	%>
+						document.getElementById("wsimg3").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname3").innerHTML = "temp_00";
+						//document.getElementById("wsimg3").style.visibility = "hidden";
+	<%
+					}
+				}
+				if(i == 7){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg9").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname9").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%
+					}else{
+	%>
+						document.getElementById("wsimg9").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname9").innerHTML = "temp_00";
+						//document.getElementById("wsimg9").style.visibility = "hidden";
+	<%
+					}
+				}
+				if(i == 8){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg5").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname5").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%
+					}else{
+	%>
+						document.getElementById("wsimg5").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname5").innerHTML = "temp_00";
+						//document.getElementById("wsimg5").style.visibility = "hidden";
+	<%
+					}
+				}
+				if(i == 9){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg4").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname4").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%
+					}else{
+	%>
+						document.getElementById("wsimg4").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname4").innerHTML = "temp_00";
+						//document.getElementById("wsimg4").style.visibility = "hidden";
+	<%
+					}
+				}
+				if(i == 10){
+					if(allCon3.get(i) != null){
+	%>
+						document.getElementById("wsimg7").src = "<%=allCon3.get(i).getImgpath()%>";
+						document.getElementById("wsname7").innerHTML = "<%=allCon3.get(i).getBname()%>";
+	<%
+					}else{
+	%>
+						document.getElementById("wsimg7").src = "http://localhost/Bond/upload.png";
+						document.getElementById("wsname7").innerHTML = "temp_00";
+						//document.getElementById("wsimg7").style.visibility = "hidden";
+	<%
+					}
+				}
+	%>
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+margin-top:-735px;margin-left:420px;
+position:relative;left:125px;top:-218px;
+
+<span id="del_sbir" class="del_key">生日:</span><span id="del_ibir" class="del_value">${empty BondContact.birthday?'未填写':BondContact.birthday}</span>
+			<span id="del_sconste" class="del_key">星座:</span><span id="del_iconste" class="del_value">${empty BondContact.constellation?'未填写':BondContact.constellation}</span><br/>
+			<span id="del_sprofe" class="del_key">职业:</span><span id="del_iprofe" class="del_value">${empty BondContact.profession?'未填写':BondContact.profession}</span><br/>
+			
+			<span id="del_shome" class="del_key">家乡:</span><span id="del_ihome" class="del_value">${empty BondContact.hometown?'未填写':BondContact.hometown}</span><br/>
+			<span id="del_saddress" class="del_key">住址:</span><span id="del_iaddress" class="del_value">${empty BondContact.address?'未填写':BondContact.address}</span><br/>
+			
+			<span id="del_sqq" class="del_key">QQ:</span><span id="del_iqq" class="del_value">${empty BondContact.qq?'未填写':BondContact.qq}</span><br/>
+			<span id="del_spnum" class="del_key">电话:</span><span id="del_ipnum" class="del_value">${empty BondContact.phonenumber?'未填写':BondContact.phonenumber}</span><br/>
+			<span id="del_semail" class="del_key">邮箱:</span><span id="del_iemail" class="del_value">${empty BondContact.email?'未填写':BondContact.email}</span><br/>
+			
+			<span id="del_sstrong" class="del_key">特长:</span><span id="del_istrong" class="del_value">${BondContact.strongpoint}</span><br/>
+			<span id="del_shobby" class="del_key">爱好:</span><span id="del_ihobby" class="del_value"><c:if test="${empty BondContact.hobby}">未选择</c:if><c:if test="${!empty BondContact.hobby}"><c:forEach items="${BondContact.hobby}" var="va">${va}&nbsp;&nbsp;</c:forEach></c:if></span><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span id="mod_sname" class="mod_rsl">姓名</span><input type="text" name="bname" id="modname" placeholder="${BondContact.bname}" class="ainl"/>
+				<span id="mod_sheight" class="mod_rsm">身高</span><input type="text" name="height" id="aheight" class="ainm" placeholder="height"/><br/>
+				<span id="mod_sgender" class="mod_rsl">性别</span><input type="text" name="gender" id="agender" class="ainl" placeholder="gender"/>
+				<span id="mod_sweight" class="mod_rsm">体重</span><input type="text" name="weight" id="aweight" class="ainm" placeholder="weight"/><br/>
+				<span id="mod_sage" class="mod_rsl">年龄</span><input type="text" name="age" id="aage" class="ainl" placeholder="age"/>
+				<span id="mod_sstate" class="mod_rsl">状态</span><input type="text" name="state" id="astate" class="ainl" placeholder="state"/><br/>
+				<span id="mod_sprofession" class="mod_rsm">职业</span><input type="text" name="profession" id="aprofession" class="ainm" placeholder="profession"/>
+				<span id="mod_sbir" class="mod_rsm">生日</span><input type="text" name="birthday" id="modbirthday" class="ainm" placeholder="${BondContact.birthday}"/><br/>
+				<span id="mod_shometown" class="mod_rsr">家乡</span><input type="text" name="hometown" id="ahometown" class="ainr" placeholder="home-town"/>
+				<span id="mod_sconstellation" class="mod_rsm">星座</span><input type="text" name="constellation" id="aconstellation" class="ainm" placeholder="constellation"/><br/>
+				<span id="mod_strongpoint" class="mod_rsl">特长</span><input type="text" name="strongpoint" id="astrongpoint" class="ainl" placeholder="strong-pointer"/>
+				<span id="mod_sqq" class="rsr">QQ</span><input type="text" name="qq" id="aqq" class="ainr" placeholder="${BondContact.qq}"/><br/>
+				<span id="mod_sphone" class="rsr">电话</span><input type="text" name="phonenumber" id="modphone" class="ainr" placeholder="phone-number"/>
+				<span id="mod_semail" class="rsr">邮箱</span><input type="text" name="email" id="aemail" class="ainr" placeholder="e-mail"/>
+				<span id="mod_saddress" class="rsr">住址</span><input type="text" name="address" id="aaddress" class="ainr" placeholder="address"/><br/>
+				<div id="mod_hobbybox">
+					<span id="mod_shobby">爱好</span><br/>
+					<input type="checkbox" name="hobby" value="看电影" class="mod_h1" id="movie"/><span class="sh">看电影</span><br/>
+					<input type="checkbox" name="hobby" value="看小说" class="mod_h1" id="novel"/><span class="sh">看小说</span><br/>
+					<input type="checkbox" name="hobby" value="听音乐" class="mod_h1" id="movie"/><span class="sh">听音乐</span><br/>
+					<input type="checkbox" name="hobby" value="看动漫" class="mod_h1" id="novel"/><span class="sh">看动漫</span><br/>
+					<input type="checkbox" name="hobby" value="运动" class="mod_h1" id="movie"/><span class="sh">运动</span><br/>
+					<input type="checkbox" name="hobby" value="旅行" class="mod_h1" id="movie"/><span class="sh">旅行</span><br/>
+					<input type="checkbox" name="hobby" value="跳舞" class="mod_h1" id="novel"/><span class="sh">跳舞</span><br/>
+					<input type="checkbox" name="hobby" value="烘培" class="mod_" id="movie"/><span class="sh">烘培</span><br/>
+					<input type="checkbox" name="hobby" value="其它" class="mod_h1" id="novel"/><span class="sh">其它</span><br/>
+				</div>
+
+
+			<!-- 教育信息 -->
+			<div id="m_eduinfo">
+				<span class="sedu" id="edu1">最高学历</span><input type="text" class="eduin" name="education" id="education" placeholder="highest educational background"/><br/>
+		 				<span class="sedu">毕业院校</span><input type="text" class="eduin" name="school" id="school" placeholder="university graduated"/><br/>
+		 				<span class="sedu">专业类别</span><input type="text" class="eduin" name="major" id="major" placeholder="subordinate profession"/><br/>
+		 				<span class="sedu">毕业时间</span><input type="text" class="eduin" name="graduate" id="graduate" placeholder="graduation time"/><br/>
+			</div>
+			<!-- 工作信息 -->
+			<div id="m_workinfo">
+				<div id="wstate">
+ 					<span id="sinoffice" class="workstate">在职</span><input type="radio" id="inoffice" name="workstate" value="在职" checked="checked" onclick="change_in()"/>
+ 					<span id="sunemployed" class="workstate">待业</span><input type="radio" id="unemployed" name="workstate" value="待业" onclick="change_un()"/>
+ 					<span id="oncework">过去的工作信息</span>
+ 				</div>
+				<span id="scompany" class="swi">所在公司</span><input type="text" class="wiin" id="wcompany" name="company" placeholder="subordinate-company"/>
+				<span id="streatment" class="swi">待遇</span><input type="text" class="wiin" id="wtreatment" name="treatment" placeholder="treatment"/><br/>
+				<span id="spost" class="swi">职位</span><input type="text" class="wiin" id="wpost" name="bpost" placeholder="post"/>
+				<span id="sworkinglife" class="swi">工作年限</span><input type="text" class="wiin" id="wworkinglife" name="workinglife" placeholder="working-life"/><br/>
+				<span id="ssale" class="swi">薪资</span><input type="text" class="wiin" id="wsale" name="sale" placeholder="sale"/>
+				<span id="scaddress" class="swi">公司地址</span><input type="text" class="wiin" id="wcaddress" name="caddress" placeholder="company-address"/><br/>
+				<span id="sreplenish">补充信息</span><input type="text" id="wreplenish" name="replenish" placeholder="replenish-info"/><br/>
+			</div>
+			<!-- 备注信息 -->
+			<div id="m_comentinfo">
+				<textarea rows="15" cols="70" id="comentarea" name="coment"></textarea>
+			</div>
+			<input style="visibility:hidden" type="text" name="oname" value="${BondContact.bname}"/>
+			<input type="text" id="mod_img_path" name="imgpath"/>
+			<input type="submit" value="确认修改" id="m_addsub" onmouseover="change_co(this)" onmouseout="modoru_co(this)"/>
+
+
+
+
+
+
+
+
+
+
+
+rgba(175, 115, 64, 0.6)
+
+
+
+
+
+af7340
+
+
+
+#c5c4ca
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 底部水平线 -->
+<hr id="add_hr"/>
+<span id="addressbook_size">${allCon.size}</span>
+/*——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————*/
+<!--————————————————————————————————————————————————————————————————————————————————————————————————————————————————————-->
+<!------------------------------------------------------------------------------------------------------------------------>
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+/*-- 首页---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int tr = request.getSession().getAttribute("totalrecord");
+
+
+document.getElementById("next_page").style.color = "gray";
+						document.getElementById("next_page").onclick = "";
+<script>
+<%
+	boolean pre = false;
+	int startNum = 6;
+%>
+	function previouspage(){
+		var t2 = 1;
+		<%
+			startNum = (startNum - (startNum % 5) - 5 + 1);
+			request.setCharacterEncoding("UTF-8");
+			Map<Integer,Bond_Contact> allCon3 = new HashMap<Integer,Bond_Contact>();
+			allCon3 = (Map<Integer,Bond_Contact>)request.getSession().getAttribute("allCon");
+			if(allCon3 != null && allCon3.size() > startNum){
+		%>
+				document.getElementById("next_page").style.color = "#fff";
+				document.getElementById("next_page").onclick = nextPage();	
+		<%
+				for(int i=0;i<5;i++){
+		%>
+					document.getElementById("book_name" + t2).innerHTML = "<%=allCon3.get(startNum).getBname()%>";
+					document.getElementById("book_pnum" + t2).innerHTML = "<%=allCon3.get(startNum).getPhonenumber()%>";
+					document.getElementById("con_img" + t2).src = "<%=allCon3.get(startNum).getImgpath()%>";
+		<%
+				startNum++;
+		%>
+				t2++;
+		<%
+				}
+				if(((startNum - 1) - 5) == 0){
+		%>
+				
+					document.getElementById("previous_page").style.color = "gray";
+					document.getElementById("previous_page").onclick = "";	
+		<%
+				}
+			}
+		%>
+	}
+	function nextPage(){
+		var t2 = 1;
+		<%
+			request.setCharacterEncoding("UTF-8");
+			Map<Integer,Bond_Contact> allCon2 = new HashMap<Integer,Bond_Contact>();
+			allCon2 = (Map<Integer,Bond_Contact>)request.getSession().getAttribute("allCon");
+			if(allCon2 != null && allCon2.size() > startNum){
+		%>
+				document.getElementById("previous_page").style.color = "#fff";
+				document.getElementById("previous_page").onclick = previouspage();	
+		<%
+				for(int i=0;i<5;i++){
+					if(allCon2.get(startNum) != null){
+		%>
+						document.getElementById("book_name" + t2).innerHTML = "<%=allCon2.get(startNum).getBname()%>";
+						document.getElementById("book_pnum" + t2).innerHTML = "<%=allCon2.get(startNum).getPhonenumber()%>";
+						document.getElementById("con_img" + t2).src = "<%=allCon2.get(startNum).getImgpath()%>";
+		<%
+						
+					}else{
+		%>
+								document.getElementById("book_hr" + (t2-1)).style.visibility = "hidden";
+								document.getElementById("book_name" + t2).style.visibility = "hidden";
+								document.getElementById("book_pnum" + t2).style.visibility = "hidden";
+								document.getElementById("con_img" + t2).style.visibility = "hidden";				
+		<%
+					}
+					startNum++;
+		%>
+						t2++;
+		<%
+				}
+		%>
+		<%
+			if((allCon2.size() - (startNum - 1)) < 1){
+		%>
+					document.getElementById("next_page").style.color = "gray";
+					document.getElementById("next_page").onclick = "";				
+		<%
+			}
+			startNum += 5;
+		   }
+		%>
+		
+	}
+</script>
+
+onmouseover="this.style.backgroundColor='#7f97a4';this.style.cursor='pointer'" onmouseout="this.style.backgroundColor='#fff'"
+
+if(allCon != null){
+				System.out.println(allCon.size());
+				System.out.println("allCon.size: " + allCon.size());
+				System.out.println("allCon的第一个元素: " + allCon.get(1)==null?"null":allCon.get(1).getBname());
+			}
+
+alert("book_name" + ii + "" + document.getElementById("book_name" + ii).innerHTML);
+					alert("book_pnum" + ii + "" + document.getElementById("book_pnum" + ii).innerHTML);
+					alert("con_img" + ii + "" + document.getElementById("con_img" + ii).src);
+
+document.getElementById("book_name" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+document.getElementById("book_pnum" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+document.getElementById("con_img" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+alert("book_name" + i + "" + document.getElementById("book_name" + i).innerHTML);
+alert("book_pnum" + i + "" + document.getElementById("book_pnum" + i).innerHTML);
+alert("con_img" + i + "" + document.getElementById("con_img" + i).innerHTML);
+
+
+
+
+document.getElementById("address_book").style.visibility = "visible";
+		document.getElementById("first_page").style.visibility = "hidden";
+		document.getElementById("i_addbook").style.backgroundColor = "#7f97a4";
+		document.getElementById("i_home").style.backgroundColor = "#fff";
+		document.getElementById("body").style.background = "url(Add_Background02.png)";
+		document.getElementById("body").style.backgroundSize = "1366px 890px;";
+		
+		x.style.backgroundColor = "#7f97a4";
+		x.onmouseout = "";
+
+<%		System.out.println("allCon.get(count).getBname(): " + allCon.get(count).getBname());	%>
+
+<!-- 
+
+	var size = document.getElementById("addressbook_size").innerHTML;
+		alert("allCon的长度: " + size);
+		if(size > 5 || size == 5){
+			for(var i=0;i<5;i++){
+			document.getElementById("book_name" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+			document.getElementById("book_pnum" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+			document.getElementById("con_img" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+			alert("book_name" + i + "" + document.getElementById("book_name" + i).innerHTML);
+			alert("book_pnum" + i + "" + document.getElementById("book_pnum" + i).innerHTML);
+			alert("con_img" + i + "" + document.getElementById("con_img" + i).innerHTML);
+		}
+		<%
+			System.out.println("count: " + count);
+			count++;
+		%>
+		}else{
+			for(var i=0;i<size;i++){
+			document.getElementById("book_name" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+			document.getElementById("book_pnum" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+			document.getElementById("con_img" + i).innerHTML = "<%=allCon.get(count).getBname()%>";
+			alert("book_name" + i + "" + document.getElementById("book_name" + i).innerHTML);
+			alert("book_pnum" + i + "" + document.getElementById("book_pnum" + i).innerHTML);
+			alert("con_img" + i + "" + document.getElementById("con_img" + i).innerHTML);
+		}
+		<%
+			System.out.println("count: " + count);
+			count++;
+		%>
+		}
+	
+ -->
+
+
+
+
+
+
+
+<span id="sc_name" class="b_sckey">姓名:</span><span id="v_name" class="b_scvalue">${BondContact.bname}</span>
+<span id="sc_gender" class="b_sckey">性别:</span><span id="v_gender" class="b_scvalue">${BondContact.gender}</span>
+<span id="sc_age" class="b_sckey">年龄:</span><span id="v_age" class="b_scvalue">${BondContact.age}</span>
+<span id="sc_hei" class="b_sckey">身高:</span><span id="v_hei" class="b_scvalue">${BondContact.height}</span>
+<span id="sc_wei" class="b_sckey">体重:</span><span id="v_wei" class="b_scvalue">${BondContact.weight}</span>
+<span id="sc_state" class="b_sckey">状态:</span><span id="v_state" class="b_scvalue">${BondContact.state}</span>
+<span id="sc_bir" class="b_sckey">生日:</span><span id="v_bir" class="b_scvalue">${BondContact.birthday}</span>
+<span id="sc_conste" class="b_sckey">星座:</span><span id="v_conste" class="b_scvalue">${BondContact.constellation}</span>
+<span id="sc_profe" class="b_sckey">职业:</span><span id="v_profe" class="b_scvalue">${BondContact.profession}</span>
+
+<span id="sc_home" class="b_sckey">家乡:</span><span id="v_home" class="b_scvalue">${BondContact.hometown}</span>
+<span id="sc_address" class="b_sckey">住址:</span><span id="v_address" class="b_scvalue">${BondContact.address}</span>
+
+<span id="sc_qq" class="b_sckey">QQ:</span><span id="v_qq" class="b_scvalue">${BondContact.qq}</span>
+<span id="sc_pnum" class="b_sckey">电话:</span><span id="v_pnum" class="b_scvalue">${BondContact.phonenumber}</span>
+<span id="sc_email" class="b_sckey">邮箱:</span><span id="v_email" class="b_scvalue">${BondContact.email}</span>
+
+
+<span id="sc_strong" class="b_sckey">特长:</span><span id="v_strong" class="b_scvalue">${BondContact.strongpoint}</span>
+<span id="sc_hobby" class="b_sckey">爱好:</span><span id="v_hobby" class="b_scvalue"><c:forEach items="${BondContact.hobby}" var="va">${va},</c:forEach></span>
+
+
+
+<span id="sc_edu" class="e_sckey">最高学历:</span><span id="v_edu" class="e_scvalue"></span>
+			<span id="sc_sch" class="e_sckey">毕业院校:</span><span id="v_sch" class="e_scvalue"></span>
+			<span id="sc_major" class="e_sckey">专业类别:</span><span id="v_major" class="e_scvalue"></span>
+			<span id="sc_gradu" class="e_sckey">毕业时间:</span><span id="v_gradu" class="e_scvalue"></span>
+			
+			
+<span id="sc_company" class="w_sckey">所在公司:</span><span id="v_company" class="w_scvalue"></span>
+			<span id="sc_sale" class="w_sckey">薪资:</span><span id="v_sale" class="w_scvalue"></span>
+			<span id="sc_treat" class="w_sckey">待遇:</span><span id="v_treat" class="w_scvalue"></span>
+			<span id="sc_caddress" class="w_sckey">公司地址:</span><span id="v_caddress" class="w_scvalue"></span>
+			<span id="sc_wf" class="w_sckey">工作年限:</span><span id="v_wf" class="w_scvalue"></span>
+			<span id="sc_post" class="w_sckey">职位:</span><span id="v_post" class="w_scvalue"></span>
+			<span id="sc_replen" class="w_sckey">补充信息:</span><span id="v_replen" class="w_scvalue"></span>
+			<span id="sc_wstate" class="w_sckey">状态:</span><span id="v_wstate" class="w_scvalue"></span>
+			
+			
+			
+<span id="sc_coment">${BondContact.coment}</span>
+
+
+
+
+
+
+.b_sckey{
+         	font-size:18px;
+         	font-family:幼圆;
+         	margin-right:5px;
+         }
+         #sc_name{
+         	position:relative;
+         	margin-left:58px;
+         	top:-155px;
+         }
+         #v_name{
+         	position:relative;
+         	top:-155px;
+         }
+         #sc_hei{
+         	position:relative;
+         	margin-left:78px;
+         	top:-155px;
+         }
+         #v_hei{
+         	position:relative;
+         	top:-155px;
+         }
+         #sc_bir{
+         	position:relative;
+         	margin-left:78px;
+         	top:-155px;
+         }
+         #v_bir{
+         	position:relative;
+         	top:-155px;
+         }
+         #sc_gender{
+         	position:relative;
+         	margin-left:357px;
+         	top:-115px;
+         }
+         #v_gender{
+         	position:relative;
+         	top:-115px;
+         }
+         #sc_wei{
+         	position:relative;
+         	margin-left:78px;
+         	top:-115px;
+         }
+         #v_wei{
+         	position:relative;
+         	top:-115px;
+         }
+         
+         
+         
+         
+         
+         
+         
+         #c1{
+         	opacity:0.7;
+         	background-color:#c5c4ca;
+         	border-radius:3px;
+         	box-shadow:0 0 8px gray;
+         	width:797px;
+         	height:35px;
+         	margin-top:24px;
+         	margin-left:113px;
+         }
+         #c2{
+         	opacity:0.7;
+         	background-color:#c5c4ca;
+         	border-radius:3px;
+         	box-shadow:0 0 8px gray;
+         	width:797px;
+         	height:35px;
+         	margin-top:19px;
+         	margin-left:113px;
+         }
+         #c3{
+         	opacity:0.7;
+         	background-color:#c5c4ca;
+         	border-radius:3px;
+         	box-shadow:0 0 8px gray;
+         	width:797px;
+         	height:35px;
+         	margin-top:19px;
+         	margin-left:113px;
+         }

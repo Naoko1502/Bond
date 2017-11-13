@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>Bond_Login</servlet-name>
+    <servlet-class>cn.bond.web.Bond_Login</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>VerifyCode</servlet-name>
+    <servlet-class>cn.bond.util.VerifyCode</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Bond_Register</servlet-name>
+    <servlet-class>cn.bond.web.Bond_Register</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Temp</servlet-name>
+    <servlet-class>cn.bond.temp.Temp</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Temp_02</servlet-name>
+    <servlet-class>cn.bond.temp.Temp_02</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Temp_03</servlet-name>
+    <servlet-class>cn.bond.temp.Temp_03</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Temp_04</servlet-name>
+    <servlet-class>cn.bond.temp.Temp_04</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Bond_Add</servlet-name>
+    <servlet-class>cn.bond.web.Bond_Add</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Bond_Search</servlet-name>
+    <servlet-class>cn.bond.web.Bond_Search</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Del_GetInfo</servlet-name>
+    <servlet-class>cn.bond.web.Del_GetInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Bond_Delete</servlet-name>
+    <servlet-class>cn.bond.web.Bond_Delete</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Mod_GetInfo</servlet-name>
+    <servlet-class>cn.bond.web.Mod_GetInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Bond_Modify</servlet-name>
+    <servlet-class>cn.bond.web.Bond_Modify</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Address_Book</servlet-name>
+    <servlet-class>cn.bond.web.Address_Book</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Address_Book_Search</servlet-name>
+    <servlet-class>cn.bond.web.Address_Book_Search</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Birthday_List</servlet-name>
+    <servlet-class>cn.bond.web.Birthday_List</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Account_Modify</servlet-name>
+    <servlet-class>cn.bond.web.Account_Modify</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Account_Delete</servlet-name>
+    <servlet-class>cn.bond.web.Account_Delete</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>We_Story</servlet-name>
+    <servlet-class>cn.bond.web.We_Story</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Story_Search</servlet-name>
+    <servlet-class>cn.bond.web.Story_Search</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Story_Edit</servlet-name>
+    <servlet-class>cn.bond.web.Story_Edit</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Bond_Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VerifyCode</servlet-name>
+    <url-pattern>/verify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bond_Register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Temp</servlet-name>
+    <url-pattern>/temp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Temp_02</servlet-name>
+    <url-pattern>/temp02</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Temp_03</servlet-name>
+    <url-pattern>/temp03</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Temp_04</servlet-name>
+    <url-pattern>/temp04</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bond_Add</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bond_Search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Del_GetInfo</servlet-name>
+    <url-pattern>/delgetinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bond_Delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Mod_GetInfo</servlet-name>
+    <url-pattern>/modgetinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bond_Modify</servlet-name>
+    <url-pattern>/modify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Address_Book</servlet-name>
+    <url-pattern>/addressbook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Address_Book_Search</servlet-name>
+    <url-pattern>/addbooksear</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Birthday_List</servlet-name>
+    <url-pattern>/birthdaylist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Account_Modify</servlet-name>
+    <url-pattern>/accountmodify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Account_Delete</servlet-name>
+    <url-pattern>/accountdel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>We_Story</servlet-name>
+    <url-pattern>/westory</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Story_Search</servlet-name>
+    <url-pattern>/storysearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Story_Edit</servlet-name>
+    <url-pattern>/storyedit</url-pattern>
+  </servlet-mapping>		
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,27 @@
+//1.初始化Connection、语句对象和结果集
+		Connection conn = null;
+		PreparedStatement pre = null;
+		ResultSet res = null;
+		//2.获取用户输入的名字和密码
+		String name = user.getUsername();
+		String password = user.getPassword();
+		try {
+			//3.连接数据库
+			conn = JDBCUtil.getConnection();
+			//4.写一条查询语句，查询姓名
+			String sql1 = "select cname from conuser where cname = ?";
+			//5.获取语句对象
+			pre = conn.prepareStatement(sql1);
+			//6.设置参数为传递过来的User的username
+			pre.setString(1, name);
+			//7.执行查询并获得结果集
+			res = pre.executeQuery();
+			//8.判断结果集是否为空
+			if(res.next()){
+				//9.不为空，名字存在，判断与只对应的密码是否正确
+			}
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
